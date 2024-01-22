@@ -11,10 +11,18 @@ public class Triangle extends Shape{
 		this.length = length;
 		}
 	
+	/**
+	 * Calculate Circumference from Triangle
+	 * @return
+	 */
 	public  double calculateCircumference() {
 		return length*3;
 	}
 
+	/**
+	 * Calculate Area from Triangle
+	 * @return
+	 */
 	public double calculateArea() {
 		return 0.5*height * length;
 	}

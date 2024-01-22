@@ -27,7 +27,15 @@ public abstract class Shape {
 		this.yCords = yCords;
 	}
 	
+	/**
+	 * Calculate Circumference from Shape
+	 * @return
+	 */
 	public abstract double calculateCircumference();
 	
+	/**
+	 * Calculate Area from Shape
+	 * @return
+	 */
 	public abstract double calculateArea();
 }

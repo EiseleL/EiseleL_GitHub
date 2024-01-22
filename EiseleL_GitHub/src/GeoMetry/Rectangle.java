@@ -1,22 +1,28 @@
 package GeoMetry;
 
-public class Rechtangle extends Shape {
+public class Rectangle extends Shape {
 
 	double length = 0;
 	double with = 0;
 	
-	public Rechtangle(double xCords, double yCords, double length, double with) {
+	public Rectangle(double xCords, double yCords, double length, double with) {
 		super(xCords, yCords);
 		this.length = length;
 		this.with = with;
 	}
 
-	@Override
+	/**
+	 * Calculate Circumference from Rectangle
+	 * @return
+	 */
 	public double calculateCircumference() {
 		return (length + with)*2;
 	}
 
-	@Override
+	/**
+	 * Calculate Area from Rectangle
+	 * @return
+	 */
 	public double calculateArea() {
 		return length*with;
 	}
