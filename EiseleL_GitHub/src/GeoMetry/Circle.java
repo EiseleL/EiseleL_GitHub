@@ -13,7 +13,7 @@ public class Circle extends Shape {
 	 * @return
 	 */
 	public double calculateCircumference() {
-		return 3.14159265359*(radius*2);
+		return Math.PI*(radius*2);
 	}
 
 	/**
@@ -21,7 +21,7 @@ public class Circle extends Shape {
 	 * @return
 	 */
 	public double calculateArea() {
-		return 2*radius*3.14159265359;
+		return Math.PI*(radius*radius);
 	}
 	
 	

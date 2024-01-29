@@ -2,8 +2,8 @@ package GeoMetry;
 
 public class Triangle extends Shape{
 
-	double length = 0;
-	double height = 0;
+	private double length;
+	private double height;
 	
 	public Triangle(double xCords, double yCords, double length, double height) {
 		super(xCords, yCords);

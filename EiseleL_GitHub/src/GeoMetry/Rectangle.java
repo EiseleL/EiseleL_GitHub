@@ -27,6 +27,8 @@ public class Rectangle extends Shape {
 		return length*with;
 	}
 	
-	
+	public double setPunktB() {
+		
+	}
 	
 }

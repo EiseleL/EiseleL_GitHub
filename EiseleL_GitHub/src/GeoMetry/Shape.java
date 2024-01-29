@@ -1,6 +1,6 @@
 package GeoMetry;
 
-public abstract class Shape {
+public abstract class Shape{
 	
 	double xCords = 0;
 	double yCords = 0;
@@ -38,4 +38,12 @@ public abstract class Shape {
 	 * @return
 	 */
 	public abstract double calculateArea();
+	
+	
+	
+	public String toString() {
+		return "xCords: " + this.xCords +"yCords: "+ this.yCords;
+	}
+	
+	
 }
