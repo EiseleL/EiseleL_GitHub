@@ -37,7 +37,7 @@ public class Group {
 
 	@Override
 	public String toString() {
-		return "Group: Name=" + name + ", Form=" + shape + this.
+		return "Group: Name=" + name + ", Form=" + shape;
 	}
 
 	/**
@@ -59,7 +59,7 @@ public class Group {
 	}
 	
 	/**
-	 * Method print all shaps 
+	 * Method print all shapes 
 	 */
 	public void printAllShapes() {
 		int tmp = 0;
@@ -83,7 +83,7 @@ public class Group {
 	}
 	
 	/**
-	 * Method calculate all cirumferences 
+	 * Method calculate all circumferences 
 	 * @return
 	 */
 	public double calculateAllCirumference() {
@@ -105,10 +105,10 @@ public class Group {
 				temp = s.calculateArea();
 			}
 		}
-		return temp;;
+		return temp;
 	}
 	/**
-	 * Method calculate biggest cirumference 
+	 * Method calculate biggest circumference 
 	 * @return
 	 */
 	public double calculateBiggestCirumference() {
