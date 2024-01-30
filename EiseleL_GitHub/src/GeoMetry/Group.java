@@ -40,17 +40,27 @@ public class Group {
 		return "Group: Name=" + name + ", Form=" + shape + this.
 	}
 
-	
+	/**
+	 * Method add shape from ArrayList 
+	 * @param shape
+	 */
 	public void addShape(Shape shape) {
 		if(!this.shape.contains(shape)) {
 			this.shape.add(shape);
 		}
 	}
 	
+	/**
+	 * Method remove shape from ArrayList 
+	 * @param shape
+	 */
 	public void removeShape(Shape shape) {
 		this.removeShape(shape);
 	}
 	
+	/**
+	 * Method print all shaps 
+	 */
 	public void printAllShapes() {
 		int tmp = 0;
 		for(Shape s : this.shape) {
@@ -60,7 +70,10 @@ public class Group {
 		System.out.println("Anzahl an Formen: " + tmp);
 	}
 	
-	
+	/**
+	 * Method calculate all areas 
+	 * @return
+	 */
 	public double calculateAllAreas() {
 		double sum = 0;
 		for(Shape s : this.shape) {
@@ -69,6 +82,10 @@ public class Group {
 		return sum;
 	}
 	
+	/**
+	 * Method calculate all cirumferences 
+	 * @return
+	 */
 	public double calculateAllCirumference() {
 		double sum = 0;
 		for(Shape s : this.shape) {
@@ -77,6 +94,10 @@ public class Group {
 		return sum;
 	}
 	
+	/**
+	 * Method calculate biggest area 
+	 * @return
+	 */
 	public double calculateBiggestArea() {
 		double temp = 0;
 		for(Shape s : this.shape) {
@@ -86,7 +107,10 @@ public class Group {
 		}
 		return temp;;
 	}
-	
+	/**
+	 * Method calculate biggest cirumference 
+	 * @return
+	 */
 	public double calculateBiggestCirumference() {
 		double temp = 0;
 		for(Shape s : this.shape) {
