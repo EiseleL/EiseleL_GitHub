@@ -1,5 +1,8 @@
 package TheSocialNetwork;
 
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.Period;
 import java.util.ArrayList;
 import java.util.UUID;
 
@@ -9,6 +12,7 @@ public abstract class Post {
 	private String publisher;
 	private String title;
 	private int numberOfLikes;
+	private LocalDateTime timeStamp;
 	private ArrayList<Post> comments;
 	public Post(String publisher, String title, int numberOfLikes) {
 		super();
@@ -79,6 +83,30 @@ public abstract class Post {
 	public void removeCommant(int INdex) {
 			this.comments.remove(numberOfLikes);
 	}
+	
+	
+	/**
+	 * Method calculate
+	 * @return
+	 */
+	public String getTimeStamp() {
+		
+		String time;
+		Duration zeitraum = Duration.between(timeStamp, LocalDateTime.now());
+		
+		if(zeitraum.toDays() > 0) {
+			time = zeitraum.toDays() + " Tage";	
+		}else if(zeitraum.toHours() > 0){
+			time = zeitraum.toHours() + " Stunden";	
+		}else if(zeitraum.toMinutes() > 0){
+			time = zeitraum.toMinutes() + " Minuten";	
+		}else{
+		time = "Gerade eben";	
+		}	
+		
+		return time;
+	}
+	
 	
 	
 	
