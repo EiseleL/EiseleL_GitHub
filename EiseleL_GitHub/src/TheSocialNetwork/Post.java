@@ -46,8 +46,40 @@ public abstract class Post {
 		this.comments = comments;
 	}
 	
-	
+	/**
+	 * Method add like to Command
+	 */
+	public void addLike() {
+		this.setNumberOfLikes(this.getNumberOfLikes()+1);
+	}
 
+	/**
+	 * Method remove like from Command
+	 */
+	public void removeLike() {
+		if(!((this.getNumberOfLikes() - 1) < 0)) {
+			this.setNumberOfLikes(this.getNumberOfLikes()-1);
+		}
+	}
+	
+	/**
+	 * Method add a comment to ArrayList Comments from Post
+	 * @param comment
+	 */
+	public void addCommant(Post comment) {
+		if(!this.comments.contains(comment)) {
+			this.comments.add(comment);
+		}
+	}
+	
+	/**
+	 * Method remove a comment from ArrayList Comments from Post
+	 * @param comment
+	 */
+	public void removeCommant(int INdex) {
+			this.comments.remove(numberOfLikes);
+	}
+	
 	
 	
 	
